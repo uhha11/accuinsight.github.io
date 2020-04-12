@@ -24,16 +24,14 @@
 &quot;6. overwriteSchema : 실행결과에 대한 스키마를 재정의할 경우 체크한다. 이전 스키마를 그대로 사용시 체크하지 않는다.&quot;
 &quot;7. newSchema : 6번 Property를 체크하고 새로 생길 컬럼명을 입력한다. pivot 실행결과가 새롭게 생긴 컬럼에 선택된다.&quot; </li></ul><ol start="2"><li>toJson 노드 실행결과 캡쳐/추가    </li><li>dropsaturatecol 아래내용 및 Example 추가</li></ol><ul><li>매뉴얼 재작성(아래 내용이 맞는지) / 현재 반영한 캡쳐 내용이 맞는 지 확인할 것</li></ul><hr><ul><li>특정 컬럼에서 최소값이 1이라면 1이 특정 %만큼 존재하면 그 컬럼을 삭제한다.
 예를 들어 ratio를 70%로 지정했을 때,
-최소값으로 측정된 값이 1이고 이게 70%이상 분포하면 그 컬럼을 삭제한다. </li><li>dropsaturatecol node는 숫자 타입만 체크한다. </li></ul><hr><ol start="4"><li>crosstab 매뉴얼 재정리 </li></ol><ul><li>행과 열의 위치를 바꾼다거나, 특정 요인에 따라 집계를 해서 구조를 바꿔주어야 하는 경우에 사용<ul><li>출처: <a href="https://rfriend.tistory.com/tag/cross%20tabulations">https://rfriend.tistory.com/tag/cross%20tabulations</a>  [R, Python 분석과 프로그래밍의 친구 (by R Friend)]</li></ul></li></ul><ol><li>nearzerovar 매뉴얼 재작성</li></ol><ul><li>매뉴얼 내용(R의 nearzerovar와 동일한 기능)을 BP를 사용하는 고객사에서 얼마나 이해할 수 있을지... </li></ul><ol start="5"><li>워드 매뉴얼에 없는 항목 </li></ol><ul><li>dhpservice : 예시화면 추가해서 반영</li></ul><ol start="6"><li>추가정리하면 좋을 내용들</li></ol><ul><li>ICOS불러오기에서 스토리지, Bucket, Credentials 등의 용어(정리할 필요 있는지?)</li><li>데이터처리(고급) 영역 재정리</li></ul><h3><a aria-hidden="true" tabindex="-1" class="anchor" id="ml-modeler"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#ml-modeler" title="Direct link to heading">#</a>ML Modeler</h3><ol><li>ML Modeler에서 제공하는 알고리즘과 알고리즘별 파라미터에 대한 설명</li></ol><h3><a aria-hidden="true" tabindex="-1" class="anchor" id="dl-modeler"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#dl-modeler" title="Direct link to heading">#</a>DL Modeler</h3><ol><li>DL Modeler Programming Guide 미작성. 작성여부 검토 필요</li><li>프로젝트 생성/수정시 CPU/GPU 인스턴스 개수 선택/수정 항목</li></ol><ul><li>클라우드 버전의 경우 자원제약이 없어 프로젝트 생성시 GPU/CPU 선택 없음<ul><li>custom 작업 선택시 cpu/gpu 선택</li></ul></li><li>온프레미스 버전의 경우 가용자원이 유한하므로 아래내용 필요함(프로젝트 챕터에도 반영)</li></ul><blockquote><p>Note
-On-Premise 환경의 경우 가용자원이 유한하므로 프로젝트 생성시 인스턴스를 선택한다.<br>
-프로젝트 생성/수정시 GPU/CPU 인스턴스 및 개수를 선택할 수 있다. </p><ol><li>프로젝트 생성시</li></ol><ul><li>프로젝트 자원선택의 [GPU 개수]는 프로젝트에서 사용할 수 있는 전체 GPU 개수를, [인스턴스 자원]은 프로젝트에서 사용할 수 있는 전체 인스턴스 개수(GPU인스턴스+CPU인스턴스)를 의미한다.</li><li>예를 들어, GPU 개수를 2, 인스턴스 자원을 5로 입력할 경우 수행가능한 작업은 다음과 같다. <ul><li>GPU 2개짜리 학습을 하나 돌릴 경우, cpu를 사용하는 인스턴스는 4개를 돌릴 수 있음</li><li>GPU 1개짜리 학습을 하나씩 2개 돌릴 경우, cpu를 사용하는 인스턴스는 3개를 돌릴 수 있음</li></ul></li><li>프로젝트 생성 창의 GPU 개수는 프로젝트에서 사용할 수 있는 GPU의 최대개수를 지정(limit 설정)하는 의미이고, CPU 인스턴스의 경우 인스턴스당 한개의 CPU를 사용할 수 있다.</li></ul><ol start="2"><li>프로젝트 수정시</li></ol><ul><li>프로젝트 수정 화면에서 프로젝트에 할당한CPU/GPU 자원의 양을 확인할 수 있다.</li></ul></blockquote></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#review-요청" class="contents__link">Review 요청</a><ul><li><a href="#flow-구성-매뉴얼-포맷" class="contents__link">Flow 구성 매뉴얼 포맷</a></li><li><a href="#dhp" class="contents__link">DHP</a></li><li><a href="#batch-pipeline" class="contents__link">Batch Pipeline</a></li><li><a href="#ml-modeler" class="contents__link">ML Modeler</a></li><li><a href="#dl-modeler" class="contents__link">DL Modeler</a></li></ul></li></ul></div></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="text--center">Copyright © 2020 BY SK HOLDINGS CO. LTD. ALL RIGHTS RESERVED</div></div></footer>
+최소값으로 측정된 값이 1이고 이게 70%이상 분포하면 그 컬럼을 삭제한다. </li><li>dropsaturatecol node는 숫자 타입만 체크한다. </li></ul><hr><ol start="4"><li>crosstab 매뉴얼 재정리 </li></ol><ul><li>행과 열의 위치를 바꾼다거나, 특정 요인에 따라 집계를 해서 구조를 바꿔주어야 하는 경우에 사용<ul><li>출처: <a href="https://rfriend.tistory.com/tag/cross%20tabulations">https://rfriend.tistory.com/tag/cross%20tabulations</a>  [R, Python 분석과 프로그래밍의 친구 (by R Friend)]</li></ul></li></ul><ol><li>nearzerovar 매뉴얼 재작성</li></ol><ul><li>매뉴얼 내용(R의 nearzerovar와 동일한 기능)을 BP를 사용하는 고객사에서 얼마나 이해할 수 있을지... </li></ul><ol start="5"><li>워드 매뉴얼에 없는 항목 </li></ol><ul><li>dhpservice : 예시화면 추가해서 반영</li></ul><ol start="6"><li>추가정리하면 좋을 내용들</li></ol><ul><li>ICOS불러오기에서 스토리지, Bucket, Credentials 등의 용어(정리할 필요 있는지?)</li><li>데이터처리(고급) 영역 재정리</li></ul></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#review-요청" class="contents__link">Review 요청</a><ul><li><a href="#flow-구성-매뉴얼-포맷" class="contents__link">Flow 구성 매뉴얼 포맷</a></li><li><a href="#dhp" class="contents__link">DHP</a></li><li><a href="#batch-pipeline" class="contents__link">Batch Pipeline</a></li></ul></li></ul></div></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="text--center">Copyright © 2020 BY SK HOLDINGS CO. LTD. ALL RIGHTS RESERVED</div></div></footer>
 </div>
 
 <script src="/styles.faebfa35.js"></script>
 
-<script src="/runtime~main.da1b8ac1.js"></script>
+<script src="/runtime~main.2d5c6927.js"></script>
 
-<script src="/main.b6d85f46.js"></script>
+<script src="/main.f7102cd3.js"></script>
 
 <script src="/1.54552d19.js"></script>
 
@@ -43,7 +41,7 @@ On-Premise 환경의 경우 가용자원이 유한하므로 프로젝트 생성�
 
 <script src="/17896441.c8f6e9cd.js"></script>
 
-<script src="/1e0b02e7.558e5cb4.js"></script>
+<script src="/1e0b02e7.4fbb1e13.js"></script>
 
 
 </body>
