@@ -23,7 +23,7 @@
 모집단의 순서에 어떤 경향이나 주기성이 없고 랜덤 하게 배열된 경우 random 샘플링보다 더 좋은 정밀도를 얻을 수 있습니다.<br>
 좌측 [데이터샘플링]노드 중 [systematic]노드를 drag &amp; drop 한 후 Property 항목을 볼 수 있습니다.  </p><blockquote><p><strong>[Note] Systematic Sampling</strong><br>
 첫 번째 요소는 무작위로 선정한 후 목록의 매번 k번째 요소를 표본으로 선정하는 표집방법이다. 모집단의 크기를 원하는 표본의 크기로 나누어 k를 계산한다. 여기서 k는 표집간격이라고 불린다.<br>
-출처 : 위키백과 계통추출법 (2018년 4월 21일(토) 15:41)</p></blockquote><h3><a aria-hidden="true" tabindex="-1" class="anchor" id="set"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#set" title="Direct link to heading">#</a>Set</h3><p>[setting], [scheduler], [parameter] 설정은 [워크플로우] &gt; [생성] &gt; [기본구성]을 참고합니다.</p><h4><a aria-hidden="true" tabindex="-1" class="anchor" id="property"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#property" title="Direct link to heading">#</a>Property</h4><p>[Node Description] 작성 중인 노드명 입력<br>
+출처 : 위키백과 계통추출법 (2018년 4월 21일(토) 15:41)</p></blockquote><h3><a aria-hidden="true" tabindex="-1" class="anchor" id="set"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#set" title="Direct link to heading">#</a>Set</h3><p>[setting], [parameter] 설정은 [워크플로우] &gt; [생성] &gt; [기본구성]을 참고합니다.</p><h4><a aria-hidden="true" tabindex="-1" class="anchor" id="property"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#property" title="Direct link to heading">#</a>Property</h4><p>[Node Description] 작성 중인 노드명 입력<br>
 <img src="/img/pipeline/workflow/workspace/data-sampling/datasampling004_systematic_property.png" alt="datasampling004"></p><ol><li>count : 샘플링할 데이터 개수</li><li>includeJob : 배치/스케줄링 작업 수행 시 샘플링 포함여부 </li></ol><h3><a aria-hidden="true" tabindex="-1" class="anchor" id="example"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#example" title="Direct link to heading">#</a>Example</h3><p>random 샘플링에서 사용한 HR_Retention.csv(14,999 records)파일에서 systematic 샘플링작업을 수행합니다.
 1부터 14,999까지 샘플링 단위가 있는 모집단에서 20개를 뽑을 때, k(표집간격)=14,999/20=749.xx이므로 처음 1부터 749번 사이에서 임의로 하나를 뽑고 그 다음부터는 749씩 더해서 뽑습니다. 아래 예시와 같이 123번 값이 처음 선택되었다면 다음에는 872번, 1621번 등을 샘플링합니다. </p><ol><li>[HDFS불러오기], [systematic]] 노드를 Designer에 Drag &amp; Drop하여 워크플로우 생성<br><img src="/img/pipeline/workflow/workspace/data-sampling/datasampling005_systematic_exampleworkflow.png" alt="datasampling005"></li><li>[systematic]노드의 count 값을 20으로 설정(전체 데이터 중 20개만 샘플링)</li><li>[systematic]노드의 snapshot을 클릭하면 아래와 같이 샘플링됨을 확인가능
 <img src="/img/pipeline/workflow/workspace/data-sampling/datasampling006_systematic_exampleworkflow%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC.png" alt="datasampling006"></li></ol></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/pipeline/workflow/workspace/data-sampling/random"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« random</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/pipeline/workflow/workspace/data-sampling/stratified"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">stratified »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#definition" class="contents__link">Definition</a></li><li><a href="#set" class="contents__link">Set</a></li><li><a href="#example" class="contents__link">Example</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="text--center">Copyright © 2020 BY SK HOLDINGS CO. LTD. ALL RIGHTS RESERVED</div></div></footer>
@@ -31,7 +31,7 @@
 
 <script src="/styles.d477e583.js"></script>
 
-<script src="/runtime~main.84328c33.js"></script>
+<script src="/runtime~main.f63b263d.js"></script>
 
 <script src="/main.790b123e.js"></script>
 
@@ -43,7 +43,7 @@
 
 <script src="/17896441.33f3962f.js"></script>
 
-<script src="/62bfe76b.0f6ec93a.js"></script>
+<script src="/62bfe76b.81407443.js"></script>
 
 
 </body>
