@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="generator" content="Docusaurus v2.0.0-alpha.58">
-<title data-react-helmet="true">session | AccuInsight+ Documentation</title><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" property="og:title" content="session | AccuInsight+ Documentation"><meta data-react-helmet="true" name="description" content="세션관리"><meta data-react-helmet="true" property="og:description" content="세션관리"><meta data-react-helmet="true" property="og:url" content="https://accuinsight.github.io//docs/pipeline/cluster/session"><link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.ico"><link data-react-helmet="true" rel="canonical" href="https://accuinsight.github.io//docs/pipeline/cluster/session"><link rel="stylesheet" href="/styles.9c2dd769.css">
-<link rel="preload" href="/styles.9173f41f.js" as="script">
-<link rel="preload" href="/runtime~main.c61dfa7b.js" as="script">
-<link rel="preload" href="/main.a9f56f94.js" as="script">
-<link rel="preload" href="/1.57986ec9.js" as="script">
-<link rel="preload" href="/2.8f9de5f8.js" as="script">
-<link rel="preload" href="/274.410aa783.js" as="script">
-<link rel="preload" href="/275.5744d365.js" as="script">
-<link rel="preload" href="/20ac7829.7a77e9a3.js" as="script">
-<link rel="preload" href="/17896441.4a9ca827.js" as="script">
-<link rel="preload" href="/4be94fcb.09352032.js" as="script">
+<title data-react-helmet="true">session | AccuInsight+ Documentation</title><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" property="og:title" content="session | AccuInsight+ Documentation"><meta data-react-helmet="true" name="description" content="세션관리"><meta data-react-helmet="true" property="og:description" content="세션관리"><meta data-react-helmet="true" property="og:url" content="https://accuinsight.github.io//docs/pipeline/cluster/session"><link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.ico"><link data-react-helmet="true" rel="canonical" href="https://accuinsight.github.io//docs/pipeline/cluster/session"><link rel="stylesheet" href="/styles.752c10c9.css">
+<link rel="preload" href="/styles.948a2ae8.js" as="script">
+<link rel="preload" href="/runtime~main.863f21e3.js" as="script">
+<link rel="preload" href="/main.afb322f0.js" as="script">
+<link rel="preload" href="/1.0b2a178b.js" as="script">
+<link rel="preload" href="/2.c66fcf26.js" as="script">
+<link rel="preload" href="/274.635ae959.js" as="script">
+<link rel="preload" href="/275.2207ffc1.js" as="script">
+<link rel="preload" href="/20ac7829.e4979002.js" as="script">
+<link rel="preload" href="/17896441.f2a1f000.js" as="script">
+<link rel="preload" href="/4be94fcb.25b28a85.js" as="script">
 </head>
 <body>
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=window.matchMedia("(prefers-color-scheme: dark)"),n=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();null!==n?t(n):e.matches&&t("dark")}()</script><div id="__docusaurus">
@@ -22,15 +22,15 @@
 <img src="/img/pipeline/cluster/setting002_%EB%A1%9C%EA%B7%B8%EC%A1%B0%ED%9A%8C.png" alt="setting002"></p><h4><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="결과-조회"></a>결과 조회<a aria-hidden="true" tabindex="-1" class="hash-link" href="#결과-조회" title="Direct link to heading">#</a></h4><p>수행된 spark 코드 및 수행결과를 조회합니다. 이전에 실행한 이력도 조회 가능하며 실패 시 에러 로그도 확인할 수 있습니다.<br>
 <img src="/img/pipeline/cluster/setting003_%EA%B2%B0%EA%B3%BC%EC%A1%B0%ED%9A%8C.png" alt="setting003"></p><h4><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="코드-실행"></a>코드 실행<a aria-hidden="true" tabindex="-1" class="hash-link" href="#코드-실행" title="Direct link to heading">#</a></h4><p>코드 실행창을 열어 직접 코드작성 및 실행이 가능합니다.<br>
 <img src="/img/pipeline/cluster/setting004_livy_executor.png" alt="setting004"></p></div></article><div class="margin-vert--lg"><nav class="pagination-nav" aria-label="Blog list page navigation"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/pipeline/cluster/cluster"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">« cluster</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/pipeline/workflow/workspace/configuration/main"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Main »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#세션관리" class="table-of-contents__link">세션관리</a><ul><li><a href="#세션관리-개요" class="table-of-contents__link">세션관리 개요</a></li><li><a href="#세션관리-기능-소개" class="table-of-contents__link">세션관리 기능 소개</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="text--center"><div>Copyright © 2020 BY SK HOLDINGS CO. LTD. ALL RIGHTS RESERVED</div></div></div></footer></div>
-<script src="/styles.9173f41f.js"></script>
-<script src="/runtime~main.c61dfa7b.js"></script>
-<script src="/main.a9f56f94.js"></script>
-<script src="/1.57986ec9.js"></script>
-<script src="/2.8f9de5f8.js"></script>
-<script src="/274.410aa783.js"></script>
-<script src="/275.5744d365.js"></script>
-<script src="/20ac7829.7a77e9a3.js"></script>
-<script src="/17896441.4a9ca827.js"></script>
-<script src="/4be94fcb.09352032.js"></script>
+<script src="/styles.948a2ae8.js"></script>
+<script src="/runtime~main.863f21e3.js"></script>
+<script src="/main.afb322f0.js"></script>
+<script src="/1.0b2a178b.js"></script>
+<script src="/2.c66fcf26.js"></script>
+<script src="/274.635ae959.js"></script>
+<script src="/275.2207ffc1.js"></script>
+<script src="/20ac7829.e4979002.js"></script>
+<script src="/17896441.f2a1f000.js"></script>
+<script src="/4be94fcb.25b28a85.js"></script>
 </body>
 </html>

@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="generator" content="Docusaurus v2.0.0-alpha.58">
-<title data-react-helmet="true">executeHive | AccuInsight+ Documentation</title><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" property="og:title" content="executeHive | AccuInsight+ Documentation"><meta data-react-helmet="true" name="description" content="Definition"><meta data-react-helmet="true" property="og:description" content="Definition"><meta data-react-helmet="true" property="og:url" content="https://accuinsight.github.io//docs/pipeline/workflow/workspace/job-processing/execute-hive"><link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.ico"><link data-react-helmet="true" rel="canonical" href="https://accuinsight.github.io//docs/pipeline/workflow/workspace/job-processing/execute-hive"><link rel="stylesheet" href="/styles.9c2dd769.css">
-<link rel="preload" href="/styles.9173f41f.js" as="script">
-<link rel="preload" href="/runtime~main.c61dfa7b.js" as="script">
-<link rel="preload" href="/main.a9f56f94.js" as="script">
-<link rel="preload" href="/1.57986ec9.js" as="script">
-<link rel="preload" href="/2.8f9de5f8.js" as="script">
-<link rel="preload" href="/274.410aa783.js" as="script">
-<link rel="preload" href="/275.5744d365.js" as="script">
-<link rel="preload" href="/20ac7829.7a77e9a3.js" as="script">
-<link rel="preload" href="/17896441.4a9ca827.js" as="script">
-<link rel="preload" href="/d2f147c9.7b0078bb.js" as="script">
+<title data-react-helmet="true">executeHive | AccuInsight+ Documentation</title><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" property="og:title" content="executeHive | AccuInsight+ Documentation"><meta data-react-helmet="true" name="description" content="Definition"><meta data-react-helmet="true" property="og:description" content="Definition"><meta data-react-helmet="true" property="og:url" content="https://accuinsight.github.io//docs/pipeline/workflow/workspace/job-processing/execute-hive"><link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.ico"><link data-react-helmet="true" rel="canonical" href="https://accuinsight.github.io//docs/pipeline/workflow/workspace/job-processing/execute-hive"><link rel="stylesheet" href="/styles.752c10c9.css">
+<link rel="preload" href="/styles.948a2ae8.js" as="script">
+<link rel="preload" href="/runtime~main.863f21e3.js" as="script">
+<link rel="preload" href="/main.afb322f0.js" as="script">
+<link rel="preload" href="/1.0b2a178b.js" as="script">
+<link rel="preload" href="/2.c66fcf26.js" as="script">
+<link rel="preload" href="/274.635ae959.js" as="script">
+<link rel="preload" href="/275.2207ffc1.js" as="script">
+<link rel="preload" href="/20ac7829.e4979002.js" as="script">
+<link rel="preload" href="/17896441.f2a1f000.js" as="script">
+<link rel="preload" href="/d2f147c9.2d0e9367.js" as="script">
 </head>
 <body>
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=window.matchMedia("(prefers-color-scheme: dark)"),n=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();null!==n?t(n):e.matches&&t("dark")}()</script><div id="__docusaurus">
@@ -26,15 +26,15 @@ Hadoop 기반으로 Data Lake를 구축한 site의 경우 Data Lake 내 hive에 
 <img src="/img/pipeline/workflow/workspace/job-processing/executehive02_hive.png" alt="executehive02"></p></li><li><p>[2.cluster]에서 hive가 위치한 클러스터를 선택. 클러스터 선택시 [3.url], [4.user], [5.password] 항목은 자동 선택 </p></li><li><p>[6.sql]에 쿼리를 입력. 오른쪽 [query editor]버튼 클릭하여 팝업된 editor에서 직접 쿼리를 작성 가능
 <img src="/img/pipeline/workflow/workspace/job-processing/executehive03_property.png" alt="executehive03"></p></li><li><p>워크플로우 실행결과로 새로운 테이블 생성 확인
 <img src="/img/pipeline/workflow/workspace/job-processing/executehive04_result.png" alt="executehive04"></p></li></ol></div></article><div class="margin-vert--lg"><nav class="pagination-nav" aria-label="Blog list page navigation"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/pipeline/workflow/workspace/job-processing/server-to-hdfs"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">« serverToHdfs</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/pipeline/workflow/workspace/job-processing/decision"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">decision »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#definition" class="table-of-contents__link">Definition</a></li><li><a href="#set" class="table-of-contents__link">Set</a></li><li><a href="#example" class="table-of-contents__link">Example</a></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="text--center"><div>Copyright © 2020 BY SK HOLDINGS CO. LTD. ALL RIGHTS RESERVED</div></div></div></footer></div>
-<script src="/styles.9173f41f.js"></script>
-<script src="/runtime~main.c61dfa7b.js"></script>
-<script src="/main.a9f56f94.js"></script>
-<script src="/1.57986ec9.js"></script>
-<script src="/2.8f9de5f8.js"></script>
-<script src="/274.410aa783.js"></script>
-<script src="/275.5744d365.js"></script>
-<script src="/20ac7829.7a77e9a3.js"></script>
-<script src="/17896441.4a9ca827.js"></script>
-<script src="/d2f147c9.7b0078bb.js"></script>
+<script src="/styles.948a2ae8.js"></script>
+<script src="/runtime~main.863f21e3.js"></script>
+<script src="/main.afb322f0.js"></script>
+<script src="/1.0b2a178b.js"></script>
+<script src="/2.c66fcf26.js"></script>
+<script src="/274.635ae959.js"></script>
+<script src="/275.2207ffc1.js"></script>
+<script src="/20ac7829.e4979002.js"></script>
+<script src="/17896441.f2a1f000.js"></script>
+<script src="/d2f147c9.2d0e9367.js"></script>
 </body>
 </html>
