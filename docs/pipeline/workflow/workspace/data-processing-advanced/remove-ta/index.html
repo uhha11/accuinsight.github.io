@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="generator" content="Docusaurus v2.0.0-alpha.58">
-<title data-react-helmet="true">removeTa | AccuInsight+ Documentation</title><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" property="og:title" content="removeTa | AccuInsight+ Documentation"><meta data-react-helmet="true" name="description" content="Definition"><meta data-react-helmet="true" property="og:description" content="Definition"><meta data-react-helmet="true" property="og:url" content="https://accuinsight.github.io//docs/pipeline/workflow/workspace/data-processing-advanced/remove-ta"><link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.ico"><link data-react-helmet="true" rel="canonical" href="https://accuinsight.github.io//docs/pipeline/workflow/workspace/data-processing-advanced/remove-ta"><link rel="stylesheet" href="/styles.9c2dd769.css">
-<link rel="preload" href="/styles.9173f41f.js" as="script">
-<link rel="preload" href="/runtime~main.535e1db4.js" as="script">
-<link rel="preload" href="/main.a9f56f94.js" as="script">
-<link rel="preload" href="/1.57986ec9.js" as="script">
-<link rel="preload" href="/2.8f9de5f8.js" as="script">
-<link rel="preload" href="/274.410aa783.js" as="script">
-<link rel="preload" href="/275.5744d365.js" as="script">
-<link rel="preload" href="/20ac7829.7a77e9a3.js" as="script">
-<link rel="preload" href="/17896441.4a9ca827.js" as="script">
-<link rel="preload" href="/bf1876c0.c5be2f77.js" as="script">
+<title data-react-helmet="true">removeTa | AccuInsight+ Documentation</title><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" property="og:title" content="removeTa | AccuInsight+ Documentation"><meta data-react-helmet="true" name="description" content="Definition"><meta data-react-helmet="true" property="og:description" content="Definition"><meta data-react-helmet="true" property="og:url" content="https://accuinsight.github.io//docs/pipeline/workflow/workspace/data-processing-advanced/remove-ta"><link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.ico"><link data-react-helmet="true" rel="canonical" href="https://accuinsight.github.io//docs/pipeline/workflow/workspace/data-processing-advanced/remove-ta"><link rel="stylesheet" href="/styles.752c10c9.css">
+<link rel="preload" href="/styles.948a2ae8.js" as="script">
+<link rel="preload" href="/runtime~main.eb520107.js" as="script">
+<link rel="preload" href="/main.afb322f0.js" as="script">
+<link rel="preload" href="/1.0b2a178b.js" as="script">
+<link rel="preload" href="/2.c66fcf26.js" as="script">
+<link rel="preload" href="/274.635ae959.js" as="script">
+<link rel="preload" href="/275.2207ffc1.js" as="script">
+<link rel="preload" href="/20ac7829.e4979002.js" as="script">
+<link rel="preload" href="/17896441.f2a1f000.js" as="script">
+<link rel="preload" href="/bf1876c0.e99de82f.js" as="script">
 </head>
 <body>
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=window.matchMedia("(prefers-color-scheme: dark)"),n=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();null!==n?t(n):e.matches&&t("dark")}()</script><div id="__docusaurus">
@@ -22,15 +22,15 @@
 <img src="/img/pipeline/workflow/workspace/data-processing-advanced/removeTa_property.png" alt="removeTa"></p><ol><li><p>col : 날짜 컬럼을 선택</p></li><li><p>dateFormat : 날짜 포맷을 지정</p></li><li><p>start : 시작 날짜를 선택</p></li><li><p>end : 종료 날짜를 선택</p></li><li><p>extraNum : 날짜 범위 전후로 추가로 확인할 값</p></li><li><p>extraType : 날짜 범위 전후로 추가로 확인할 값의 단위. 선택할 수 있는 extraType은 아래와 같다.</p><table><thead><tr><th>extraType 코드</th></tr></thead><tbody><tr><td>second</td></tr><tr><td>minute</td></tr><tr><td>hour</td></tr><tr><td>day</td></tr></tbody></table></li></ol><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="example"></a>Example<a aria-hidden="true" tabindex="-1" class="hash-link" href="#example" title="Direct link to heading">#</a></h3><p>timestamp 타입의 컬럼 정보가 특정 시작일자 ~ 종료일자에 해당하는 데이터만 남기고 삭제하는 워크플로우를 구성합니다.  </p><ol><li><p>[HDFS불러오기], [removeTa] 노드를 Designer에 Drag &amp; Drop하여 워크플로우 생성<br>
 <img src="/img/pipeline/workflow/workspace/data-processing-advanced/removeTa.png" alt="removeTa"></p></li><li><p>[removeTa]노드에 아래와 같이 입력 후 snapshot 클릭<br>
 <img src="/img/pipeline/workflow/workspace/data-processing-advanced/removeTa_example.png" alt="removeTa"></p></li></ol></div></article><div class="margin-vert--lg"><nav class="pagination-nav" aria-label="Blog list page navigation"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/pipeline/workflow/workspace/data-processing-advanced/drop-saturate-col"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">« dropSaturateCol</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/pipeline/workflow/workspace/data-processing-advanced/remove-ta-auto"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">removeTaAuto »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#definition" class="table-of-contents__link">Definition</a></li><li><a href="#set" class="table-of-contents__link">Set</a></li><li><a href="#example" class="table-of-contents__link">Example</a></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="text--center"><div>Copyright © 2020 BY SK HOLDINGS CO. LTD. ALL RIGHTS RESERVED</div></div></div></footer></div>
-<script src="/styles.9173f41f.js"></script>
-<script src="/runtime~main.535e1db4.js"></script>
-<script src="/main.a9f56f94.js"></script>
-<script src="/1.57986ec9.js"></script>
-<script src="/2.8f9de5f8.js"></script>
-<script src="/274.410aa783.js"></script>
-<script src="/275.5744d365.js"></script>
-<script src="/20ac7829.7a77e9a3.js"></script>
-<script src="/17896441.4a9ca827.js"></script>
-<script src="/bf1876c0.c5be2f77.js"></script>
+<script src="/styles.948a2ae8.js"></script>
+<script src="/runtime~main.eb520107.js"></script>
+<script src="/main.afb322f0.js"></script>
+<script src="/1.0b2a178b.js"></script>
+<script src="/2.c66fcf26.js"></script>
+<script src="/274.635ae959.js"></script>
+<script src="/275.2207ffc1.js"></script>
+<script src="/20ac7829.e4979002.js"></script>
+<script src="/17896441.f2a1f000.js"></script>
+<script src="/bf1876c0.e99de82f.js"></script>
 </body>
 </html>
