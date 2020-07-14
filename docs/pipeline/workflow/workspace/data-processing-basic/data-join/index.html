@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="generator" content="Docusaurus v2.0.0-alpha.58">
-<title data-react-helmet="true">dataJoin | AccuInsight+ Documentation</title><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" property="og:title" content="dataJoin | AccuInsight+ Documentation"><meta data-react-helmet="true" name="description" content="Definition"><meta data-react-helmet="true" property="og:description" content="Definition"><meta data-react-helmet="true" property="og:url" content="https://accuinsight.github.io//docs/pipeline/workflow/workspace/data-processing-basic/data-join"><link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.ico"><link data-react-helmet="true" rel="canonical" href="https://accuinsight.github.io//docs/pipeline/workflow/workspace/data-processing-basic/data-join"><link rel="stylesheet" href="/styles.9c2dd769.css">
-<link rel="preload" href="/styles.9173f41f.js" as="script">
-<link rel="preload" href="/runtime~main.535e1db4.js" as="script">
-<link rel="preload" href="/main.a9f56f94.js" as="script">
-<link rel="preload" href="/1.57986ec9.js" as="script">
-<link rel="preload" href="/2.8f9de5f8.js" as="script">
-<link rel="preload" href="/274.410aa783.js" as="script">
-<link rel="preload" href="/275.5744d365.js" as="script">
-<link rel="preload" href="/20ac7829.7a77e9a3.js" as="script">
-<link rel="preload" href="/17896441.4a9ca827.js" as="script">
-<link rel="preload" href="/0d07639a.2a524041.js" as="script">
+<title data-react-helmet="true">dataJoin | AccuInsight+ Documentation</title><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" property="og:title" content="dataJoin | AccuInsight+ Documentation"><meta data-react-helmet="true" name="description" content="Definition"><meta data-react-helmet="true" property="og:description" content="Definition"><meta data-react-helmet="true" property="og:url" content="https://accuinsight.github.io//docs/pipeline/workflow/workspace/data-processing-basic/data-join"><link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.ico"><link data-react-helmet="true" rel="canonical" href="https://accuinsight.github.io//docs/pipeline/workflow/workspace/data-processing-basic/data-join"><link rel="stylesheet" href="/styles.752c10c9.css">
+<link rel="preload" href="/styles.948a2ae8.js" as="script">
+<link rel="preload" href="/runtime~main.1127ee58.js" as="script">
+<link rel="preload" href="/main.afb322f0.js" as="script">
+<link rel="preload" href="/1.0b2a178b.js" as="script">
+<link rel="preload" href="/2.c66fcf26.js" as="script">
+<link rel="preload" href="/274.635ae959.js" as="script">
+<link rel="preload" href="/275.2207ffc1.js" as="script">
+<link rel="preload" href="/20ac7829.e4979002.js" as="script">
+<link rel="preload" href="/17896441.f2a1f000.js" as="script">
+<link rel="preload" href="/0d07639a.3503874f.js" as="script">
 </head>
 <body>
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=window.matchMedia("(prefers-color-scheme: dark)"),n=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();null!==n?t(n):e.matches&&t("dark")}()</script><div id="__docusaurus">
@@ -23,15 +23,15 @@
 <img src="/img/pipeline/workflow/workspace/data-processing-basic/prebasic014_datajoin_property.png" alt="prebasic014"></p><ol><li><p>col1 : 첫 번째 노드 기준 컬럼 선택 </p></li><li><p>col2 : 두 번째 노드 기준 컬럼 선택  </p></li><li><p>how : join 유형 선택  </p><table><thead><tr><th>join유형</th><th>설명</th></tr></thead><tbody><tr><td>inner</td><td>조인 조건에 맞는 행만 검색</td></tr><tr><td>outer</td><td>조인 키에 대응되는 row가 없는 경우 null로 추출</td></tr><tr><td>left_outer</td><td>col1에서 선택한 조인 키에 대응되는 row가 없는 경우 null로 추출</td></tr><tr><td>right_outer</td><td>col2에서 선택한 조인 키에 대응되는 row가 없는 경우 null로 추출</td></tr><tr><td>left_semi</td><td>작성필요</td></tr><tr><td>left_anti</td><td>작성필요</td></tr><tr><td>cross</td><td>두 노드의 카티션 프로덕트(곱집합)결과를 추출</td></tr></tbody></table></li><li><p>cleanColumns : 소스테이블 구분을 위한 태그제거 및 중복 key 컬럼 제거</p></li></ol><h4><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="suggestion"></a>Suggestion<a aria-hidden="true" tabindex="-1" class="hash-link" href="#suggestion" title="Direct link to heading">#</a></h4><p>데이터 Join에 사용하기 위한 컬럼을 Pipeline에서 제시합니다. 워크플로우 구성 후 Property 항목의 [Suggestion] 버튼을 눌러, 컬럼간 유사도를 확인합니다.<br>
 <img src="/img/pipeline/workflow/workspace/data-processing-basic/prebasic015_datajoin_suggestion.png" alt="prebasic015">  </p><ol><li>Similarity : 샘플링한 데이터의 유사도. 적용시 전체 데이터 유사도 확인가능  </li><li>적용 : Join대상 컬럼 확인 후 적용버튼 클릭시 Property 항목의 col1, col2에 자동입력</li></ol><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="example"></a>Example<a aria-hidden="true" tabindex="-1" class="hash-link" href="#example" title="Direct link to heading">#</a></h3><p>상품정보와 주문정보 데이터를 goods_id 컬럼으로 조인합니다. 분석가가 직접 지정할 수도 있고, [suggestion]기능을 사용할 수도 있습니다.  </p><ol><li>[HDFS불러오기], [select], [dataJoin]노드를 Designer에 Drag &amp; Drop하여 워크플로우 생성<br><img src="/img/pipeline/workflow/workspace/data-processing-basic/prebasic016_datajoin_exampleworkflow.png" alt="prebasic016"> </li><li>[dataJoin]노드 col1, col2에서 goods_id 선택. 또는 [Suggest] 클릭 후 goods_id 항목 [적용]<br><img src="/img/pipeline/workflow/workspace/data-processing-basic/prebasic017_datajoin_exampleworkflow_similarity.png" alt="prebasic017"> </li><li>[dataJoin]노드 how에서 inner 선택 후 snapshot버튼 선택하여 조인결과 확인
 <img src="/img/pipeline/workflow/workspace/data-processing-basic/prebasic018_datajoin_exampleworkflow_%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC.png" alt="prebasic018"> </li></ol></div></article><div class="margin-vert--lg"><nav class="pagination-nav" aria-label="Blog list page navigation"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/pipeline/workflow/workspace/data-processing-basic/select"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">« select</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/pipeline/workflow/workspace/data-processing-basic/crosstab"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">crosstab »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#definition" class="table-of-contents__link">Definition</a></li><li><a href="#set" class="table-of-contents__link">Set</a></li><li><a href="#example" class="table-of-contents__link">Example</a></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="text--center"><div>Copyright © 2020 BY SK HOLDINGS CO. LTD. ALL RIGHTS RESERVED</div></div></div></footer></div>
-<script src="/styles.9173f41f.js"></script>
-<script src="/runtime~main.535e1db4.js"></script>
-<script src="/main.a9f56f94.js"></script>
-<script src="/1.57986ec9.js"></script>
-<script src="/2.8f9de5f8.js"></script>
-<script src="/274.410aa783.js"></script>
-<script src="/275.5744d365.js"></script>
-<script src="/20ac7829.7a77e9a3.js"></script>
-<script src="/17896441.4a9ca827.js"></script>
-<script src="/0d07639a.2a524041.js"></script>
+<script src="/styles.948a2ae8.js"></script>
+<script src="/runtime~main.1127ee58.js"></script>
+<script src="/main.afb322f0.js"></script>
+<script src="/1.0b2a178b.js"></script>
+<script src="/2.c66fcf26.js"></script>
+<script src="/274.635ae959.js"></script>
+<script src="/275.2207ffc1.js"></script>
+<script src="/20ac7829.e4979002.js"></script>
+<script src="/17896441.f2a1f000.js"></script>
+<script src="/0d07639a.3503874f.js"></script>
 </body>
 </html>

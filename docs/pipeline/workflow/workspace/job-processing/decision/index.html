@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="generator" content="Docusaurus v2.0.0-alpha.58">
-<title data-react-helmet="true">decision | AccuInsight+ Documentation</title><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" property="og:title" content="decision | AccuInsight+ Documentation"><meta data-react-helmet="true" name="description" content="Definition"><meta data-react-helmet="true" property="og:description" content="Definition"><meta data-react-helmet="true" property="og:url" content="https://accuinsight.github.io//docs/pipeline/workflow/workspace/job-processing/decision"><link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.ico"><link data-react-helmet="true" rel="canonical" href="https://accuinsight.github.io//docs/pipeline/workflow/workspace/job-processing/decision"><link rel="stylesheet" href="/styles.9c2dd769.css">
-<link rel="preload" href="/styles.9173f41f.js" as="script">
-<link rel="preload" href="/runtime~main.535e1db4.js" as="script">
-<link rel="preload" href="/main.a9f56f94.js" as="script">
-<link rel="preload" href="/1.57986ec9.js" as="script">
-<link rel="preload" href="/2.8f9de5f8.js" as="script">
-<link rel="preload" href="/274.410aa783.js" as="script">
-<link rel="preload" href="/275.5744d365.js" as="script">
-<link rel="preload" href="/20ac7829.7a77e9a3.js" as="script">
-<link rel="preload" href="/17896441.4a9ca827.js" as="script">
-<link rel="preload" href="/c493f38b.7c8440f9.js" as="script">
+<title data-react-helmet="true">decision | AccuInsight+ Documentation</title><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" property="og:title" content="decision | AccuInsight+ Documentation"><meta data-react-helmet="true" name="description" content="Definition"><meta data-react-helmet="true" property="og:description" content="Definition"><meta data-react-helmet="true" property="og:url" content="https://accuinsight.github.io//docs/pipeline/workflow/workspace/job-processing/decision"><link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.ico"><link data-react-helmet="true" rel="canonical" href="https://accuinsight.github.io//docs/pipeline/workflow/workspace/job-processing/decision"><link rel="stylesheet" href="/styles.752c10c9.css">
+<link rel="preload" href="/styles.948a2ae8.js" as="script">
+<link rel="preload" href="/runtime~main.1127ee58.js" as="script">
+<link rel="preload" href="/main.afb322f0.js" as="script">
+<link rel="preload" href="/1.0b2a178b.js" as="script">
+<link rel="preload" href="/2.c66fcf26.js" as="script">
+<link rel="preload" href="/274.635ae959.js" as="script">
+<link rel="preload" href="/275.2207ffc1.js" as="script">
+<link rel="preload" href="/20ac7829.e4979002.js" as="script">
+<link rel="preload" href="/17896441.f2a1f000.js" as="script">
+<link rel="preload" href="/c493f38b.d308916f.js" as="script">
 </head>
 <body>
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=window.matchMedia("(prefers-color-scheme: dark)"),n=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();null!==n?t(n):e.matches&&t("dark")}()</script><div id="__docusaurus">
@@ -24,15 +24,15 @@ case 입력 구문은 oozie el function 으로 세부 사항은 아래 사이트
 <a href="https://oozie.apache.org/docs/4.3.0/WorkflowFunctionalSpec.html#a4.2.2_Basic_EL_Functions">https://oozie.apache.org/docs/4.3.0/WorkflowFunctionalSpec.html#a4.2.2_Basic_EL_Functions</a>  </p></blockquote><ol start="4"><li><p>[fs]노드(fs_fileexist, fs_nofiles)를 아래와 같이 설정 </p><ul><li>fs_fileexist : property &quot;5.touchz&quot; &gt; HDFS File Browser에서 &quot;hdfs://kbtest-accu-hdfs-nn.suka:9000/tmp/test-ods&quot;경로 설정 후 &quot;/fileexist.yes&quot; 입력</li><li>fs_nofiles : property &quot;5.touchz&quot; &gt; HDFS File Browser에서 &quot;hdfs://kbtest-accu-hdfs-nn.suka:9000/tmp/test-ods&quot;경로 설정 후 &quot;/no_files&quot; 입력</li></ul></li><li><p>실행결과</p><ul><li>데이터가 있을 경우 지정한 경로에 fileexist.yes 생성 확인
 <img src="/img/pipeline/workflow/workspace/job-processing/decision04_casetofileyes.png" alt="decision04"></li><li>데이터가 없을 경우 지정한 경로에 no_files 생성 확인
 <img src="/img/pipeline/workflow/workspace/job-processing/decision05_casetonofiles.png" alt="decision05"></li></ul></li></ol></div></article><div class="margin-vert--lg"><nav class="pagination-nav" aria-label="Blog list page navigation"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/pipeline/workflow/workspace/job-processing/execute-hive"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">« executeHive</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/pipeline/workflow/workspace/job-processing/fork"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">fork »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#definition" class="table-of-contents__link">Definition</a></li><li><a href="#set" class="table-of-contents__link">Set</a></li><li><a href="#example" class="table-of-contents__link">Example</a></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="text--center"><div>Copyright © 2020 BY SK HOLDINGS CO. LTD. ALL RIGHTS RESERVED</div></div></div></footer></div>
-<script src="/styles.9173f41f.js"></script>
-<script src="/runtime~main.535e1db4.js"></script>
-<script src="/main.a9f56f94.js"></script>
-<script src="/1.57986ec9.js"></script>
-<script src="/2.8f9de5f8.js"></script>
-<script src="/274.410aa783.js"></script>
-<script src="/275.5744d365.js"></script>
-<script src="/20ac7829.7a77e9a3.js"></script>
-<script src="/17896441.4a9ca827.js"></script>
-<script src="/c493f38b.7c8440f9.js"></script>
+<script src="/styles.948a2ae8.js"></script>
+<script src="/runtime~main.1127ee58.js"></script>
+<script src="/main.afb322f0.js"></script>
+<script src="/1.0b2a178b.js"></script>
+<script src="/2.c66fcf26.js"></script>
+<script src="/274.635ae959.js"></script>
+<script src="/275.2207ffc1.js"></script>
+<script src="/20ac7829.e4979002.js"></script>
+<script src="/17896441.f2a1f000.js"></script>
+<script src="/c493f38b.d308916f.js"></script>
 </body>
 </html>

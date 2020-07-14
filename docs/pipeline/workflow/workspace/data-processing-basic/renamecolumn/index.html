@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="generator" content="Docusaurus v2.0.0-alpha.58">
-<title data-react-helmet="true">renameColumn | AccuInsight+ Documentation</title><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" property="og:title" content="renameColumn | AccuInsight+ Documentation"><meta data-react-helmet="true" name="description" content="Definition"><meta data-react-helmet="true" property="og:description" content="Definition"><meta data-react-helmet="true" property="og:url" content="https://accuinsight.github.io//docs/pipeline/workflow/workspace/data-processing-basic/renamecolumn"><link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.ico"><link data-react-helmet="true" rel="canonical" href="https://accuinsight.github.io//docs/pipeline/workflow/workspace/data-processing-basic/renamecolumn"><link rel="stylesheet" href="/styles.9c2dd769.css">
-<link rel="preload" href="/styles.9173f41f.js" as="script">
-<link rel="preload" href="/runtime~main.535e1db4.js" as="script">
-<link rel="preload" href="/main.a9f56f94.js" as="script">
-<link rel="preload" href="/1.57986ec9.js" as="script">
-<link rel="preload" href="/2.8f9de5f8.js" as="script">
-<link rel="preload" href="/274.410aa783.js" as="script">
-<link rel="preload" href="/275.5744d365.js" as="script">
-<link rel="preload" href="/20ac7829.7a77e9a3.js" as="script">
-<link rel="preload" href="/17896441.4a9ca827.js" as="script">
-<link rel="preload" href="/846fd0c8.6a061e65.js" as="script">
+<title data-react-helmet="true">renameColumn | AccuInsight+ Documentation</title><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" property="og:title" content="renameColumn | AccuInsight+ Documentation"><meta data-react-helmet="true" name="description" content="Definition"><meta data-react-helmet="true" property="og:description" content="Definition"><meta data-react-helmet="true" property="og:url" content="https://accuinsight.github.io//docs/pipeline/workflow/workspace/data-processing-basic/renamecolumn"><link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.ico"><link data-react-helmet="true" rel="canonical" href="https://accuinsight.github.io//docs/pipeline/workflow/workspace/data-processing-basic/renamecolumn"><link rel="stylesheet" href="/styles.752c10c9.css">
+<link rel="preload" href="/styles.948a2ae8.js" as="script">
+<link rel="preload" href="/runtime~main.1127ee58.js" as="script">
+<link rel="preload" href="/main.afb322f0.js" as="script">
+<link rel="preload" href="/1.0b2a178b.js" as="script">
+<link rel="preload" href="/2.c66fcf26.js" as="script">
+<link rel="preload" href="/274.635ae959.js" as="script">
+<link rel="preload" href="/275.2207ffc1.js" as="script">
+<link rel="preload" href="/20ac7829.e4979002.js" as="script">
+<link rel="preload" href="/17896441.f2a1f000.js" as="script">
+<link rel="preload" href="/846fd0c8.b6c67536.js" as="script">
 </head>
 <body>
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=window.matchMedia("(prefers-color-scheme: dark)"),n=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();null!==n?t(n):e.matches&&t("dark")}()</script><div id="__docusaurus">
@@ -23,15 +23,15 @@
 <img src="/img/pipeline/workflow/workspace/data-processing-basic/prebasic079_renamecolumn_property.png" alt="prebasic079"></p><ol><li>columns : 변경할 컬럼과 새로운 컬럼명 입력<ul><li>old Name : 변경 전 컬럼명</li><li>new Name : 변경 후 컬럼명</li></ul></li></ol><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="example"></a>Example<a aria-hidden="true" tabindex="-1" class="hash-link" href="#example" title="Direct link to heading">#</a></h3><p>[dataJoin]노드 사용시 랜덤하게 생성되는 컬럼명을 변경하는 워크플로우를 생성합니다.  </p><ol><li><p>[HDFS불러오기], [select], [dataJoin], [renameColumn] 노드를 Designer에 Drag &amp; Drop하여 워크플로우 생성<br>
 <img src="/img/pipeline/workflow/workspace/data-processing-basic/prebasic080_renamecolumn_exampleworkflow.png" alt="prebasic080"> </p></li><li><p>[dataJoin]노드 col1, col2에서 goods_id 선택, how에서 inner 선택 후 snapshot 클릭
 <img src="/img/pipeline/workflow/workspace/data-processing-basic/prebasic081_renamecolumn_datajoin.png" alt="prebasic081">  </p></li><li><p>dataJoin 후 랜덤하게 생성한 컬럼명을 [renameColumn]노드에서 변경 후 snapshot 클릭  </p><ul><li>변경대상 컬럼목록 전체를 불러오거나(1번)  </li><li>필요한 컬럼을 선택하여 변경 가능함(2번)<br><img src="/img/pipeline/workflow/workspace/data-processing-basic/prebasic082_renamecolumn_exampleworkflow_%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC.png" alt="prebasic082">  </li></ul></li></ol></div></article><div class="margin-vert--lg"><nav class="pagination-nav" aria-label="Blog list page navigation"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/pipeline/workflow/workspace/data-processing-basic/with-column"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">« withColumn</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/pipeline/workflow/workspace/data-processing-basic/is-in"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">isin »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#definition" class="table-of-contents__link">Definition</a></li><li><a href="#set" class="table-of-contents__link">Set</a></li><li><a href="#example" class="table-of-contents__link">Example</a></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="text--center"><div>Copyright © 2020 BY SK HOLDINGS CO. LTD. ALL RIGHTS RESERVED</div></div></div></footer></div>
-<script src="/styles.9173f41f.js"></script>
-<script src="/runtime~main.535e1db4.js"></script>
-<script src="/main.a9f56f94.js"></script>
-<script src="/1.57986ec9.js"></script>
-<script src="/2.8f9de5f8.js"></script>
-<script src="/274.410aa783.js"></script>
-<script src="/275.5744d365.js"></script>
-<script src="/20ac7829.7a77e9a3.js"></script>
-<script src="/17896441.4a9ca827.js"></script>
-<script src="/846fd0c8.6a061e65.js"></script>
+<script src="/styles.948a2ae8.js"></script>
+<script src="/runtime~main.1127ee58.js"></script>
+<script src="/main.afb322f0.js"></script>
+<script src="/1.0b2a178b.js"></script>
+<script src="/2.c66fcf26.js"></script>
+<script src="/274.635ae959.js"></script>
+<script src="/275.2207ffc1.js"></script>
+<script src="/20ac7829.e4979002.js"></script>
+<script src="/17896441.f2a1f000.js"></script>
+<script src="/846fd0c8.b6c67536.js"></script>
 </body>
 </html>
