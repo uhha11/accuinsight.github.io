@@ -6,15 +6,15 @@
 <meta name="generator" content="Docusaurus v2.0.0-alpha.61">
 <title data-react-helmet="true">Model | AccuInsight+ Documentation</title><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" property="og:title" content="Model | AccuInsight+ Documentation"><meta data-react-helmet="true" name="description" content="모델 활용"><meta data-react-helmet="true" property="og:description" content="모델 활용"><meta data-react-helmet="true" property="og:url" content="https://accuinsight.github.io//docs/dlmodeler/tutorial/model"><link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.ico"><link data-react-helmet="true" rel="canonical" href="https://accuinsight.github.io//docs/dlmodeler/tutorial/model"><link rel="stylesheet" href="/styles.a1d3d468.css">
 <link rel="preload" href="/styles.03adc67d.js" as="script">
-<link rel="preload" href="/runtime~main.f6f15a04.js" as="script">
-<link rel="preload" href="/main.789a250c.js" as="script">
+<link rel="preload" href="/runtime~main.8702308d.js" as="script">
+<link rel="preload" href="/main.1859c4b6.js" as="script">
 <link rel="preload" href="/1.7a06f662.js" as="script">
-<link rel="preload" href="/2.4db8d49a.js" as="script">
-<link rel="preload" href="/277.b2c0ecf2.js" as="script">
+<link rel="preload" href="/2.de29693f.js" as="script">
+<link rel="preload" href="/277.3d879599.js" as="script">
 <link rel="preload" href="/278.990da4f2.js" as="script">
-<link rel="preload" href="/20ac7829.a4da2f9f.js" as="script">
+<link rel="preload" href="/20ac7829.7bf7ebd0.js" as="script">
 <link rel="preload" href="/17896441.6fe1a8b1.js" as="script">
-<link rel="preload" href="/4fbf705f.01395694.js" as="script">
+<link rel="preload" href="/4fbf705f.28c6eab1.js" as="script">
 </head>
 <body>
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();t(null!==e?e:"light")}()</script><div id="__docusaurus">
@@ -28,16 +28,16 @@
 </span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">for image in image_list:</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">   image_path = os.path.join(root_path, image)</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">   # print(image_path)</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block">
 </span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">   result_dic[image] = get_model_result(image, image_path)</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">   time.sleep(0.5)</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    # print(image, result_dic[image])</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block">
 </span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"># print(result_dic)</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">label_dic = {0: &#x27;forest&#x27;, 1: &#x27;buildings&#x27;, 2: &#x27;glacier&#x27;, 3: &#x27;street&#x27;, 4: &#x27;mountain&#x27;, 5: &#x27;sea&#x27;}</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block">
-</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">for img_name in sorted(result_dic.keys()):</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">   result_str = img_name + &#x27;: &#x27; + label_dic[int(result_dic[img_name][1])]</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">   print(result_str)</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"> &gt;</span></div></div></div></div></div></div></article><div class="margin-vert--lg"><nav class="pagination-nav" aria-label="Blog list page navigation"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/dlmodeler/tutorial/deploy"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">« Deploy</div></a></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_3klQ"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#모델-활용" class="table-of-contents__link">모델 활용</a></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="text--center"><div>Copyright © 2020 BY SK HOLDINGS CO. LTD. ALL RIGHTS RESERVED</div></div></div></footer></div>
+</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">for img_name in sorted(result_dic.keys()):</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">   result_str = img_name + &#x27;: &#x27; + label_dic[int(result_dic[img_name][1])]</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">   print(result_str)</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"> &gt;</span></div></div></div></div></div></div></article><div class="margin-vert--lg"><nav class="pagination-nav" aria-label="Blog list page navigation"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/dlmodeler/tutorial/deploy"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">« Deploy</div></a></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_3klQ"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#모델-활용" class="table-of-contents__link">모델 활용</a></li></ul></div></div></div></div></main></div></div></div>
 <script src="/styles.03adc67d.js"></script>
-<script src="/runtime~main.f6f15a04.js"></script>
-<script src="/main.789a250c.js"></script>
+<script src="/runtime~main.8702308d.js"></script>
+<script src="/main.1859c4b6.js"></script>
 <script src="/1.7a06f662.js"></script>
-<script src="/2.4db8d49a.js"></script>
-<script src="/277.b2c0ecf2.js"></script>
+<script src="/2.de29693f.js"></script>
+<script src="/277.3d879599.js"></script>
 <script src="/278.990da4f2.js"></script>
-<script src="/20ac7829.a4da2f9f.js"></script>
+<script src="/20ac7829.7bf7ebd0.js"></script>
 <script src="/17896441.6fe1a8b1.js"></script>
-<script src="/4fbf705f.01395694.js"></script>
+<script src="/4fbf705f.28c6eab1.js"></script>
 </body>
 </html>
