@@ -6,15 +6,15 @@
 <meta name="generator" content="Docusaurus v2.0.0-alpha.61">
 <title data-react-helmet="true">upDown | AccuInsight+ Documentation</title><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" property="og:title" content="upDown | AccuInsight+ Documentation"><meta data-react-helmet="true" name="description" content="Definition"><meta data-react-helmet="true" property="og:description" content="Definition"><meta data-react-helmet="true" property="og:url" content="https://accuinsight.github.io//docs/pipeline/workflow/workspace/data-sampling/updown"><link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.ico"><link data-react-helmet="true" rel="canonical" href="https://accuinsight.github.io//docs/pipeline/workflow/workspace/data-sampling/updown"><link rel="stylesheet" href="/styles.a1d3d468.css">
 <link rel="preload" href="/styles.03adc67d.js" as="script">
-<link rel="preload" href="/runtime~main.f6f15a04.js" as="script">
-<link rel="preload" href="/main.789a250c.js" as="script">
+<link rel="preload" href="/runtime~main.8702308d.js" as="script">
+<link rel="preload" href="/main.1859c4b6.js" as="script">
 <link rel="preload" href="/1.7a06f662.js" as="script">
-<link rel="preload" href="/2.4db8d49a.js" as="script">
-<link rel="preload" href="/277.b2c0ecf2.js" as="script">
+<link rel="preload" href="/2.de29693f.js" as="script">
+<link rel="preload" href="/277.3d879599.js" as="script">
 <link rel="preload" href="/278.990da4f2.js" as="script">
-<link rel="preload" href="/20ac7829.a4da2f9f.js" as="script">
+<link rel="preload" href="/20ac7829.7bf7ebd0.js" as="script">
 <link rel="preload" href="/17896441.6fe1a8b1.js" as="script">
-<link rel="preload" href="/e78309ba.6837cfa5.js" as="script">
+<link rel="preload" href="/e78309ba.3109a215.js" as="script">
 </head>
 <body>
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();t(null!==e?e:"light")}()</script><div id="__docusaurus">
@@ -22,16 +22,16 @@
 좌측 [데이터샘플링]에서 [upDown]노드를 drag &amp; drop 한 후 Property 항목을 입력합니다. </p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_2cZh" id="set"></a>Set<a aria-hidden="true" tabindex="-1" class="hash-link" href="#set" title="Direct link to heading">#</a></h3><p>[setting], [parameter] 설정은 [워크플로우] &gt; [생성] &gt; [기본구성]을 참고합니다.</p><h4><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_2cZh" id="property"></a>Property<a aria-hidden="true" tabindex="-1" class="hash-link" href="#property" title="Direct link to heading">#</a></h4><p>[Node Description] 작성 중인 노드명 입력<br>
 <img src="/img/pipeline/workflow/workspace/data-sampling/updown_property.png" alt="propery">{: width=100px}</p><ol><li>method : 샘플링 방법을 입력<ul><li>up : 2개(labelFalse,labelTrue)의 값 중 건수가 많은 쪽에 맞춰 비슷한 건수로 샘플링한다. ( 건수가 부족한 경우 중복하여 생성 )</li><li>down : 2개(labelFalse,labelTrue)의 값 중 건수가 적은 쪽에 맞춰 비슷한 건수로 샘플링한다.</li></ul></li><li>col : 적용할 기준 컬럼 선택</li><li>labelFalse : 선택한 컬럼의 value 값</li><li>labelTrue : 선택한 컬럼의 value 값</li></ol><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_2cZh" id="example"></a>Example<a aria-hidden="true" tabindex="-1" class="hash-link" href="#example" title="Direct link to heading">#</a></h3><p>housing_sale.csv 파일을 선택하여 [upDown] 샘플링을 한다. up방식으로 샘플링 시도하는 예시입니다.</p><ol><li>[HDFS불러오기], [upDown] 노드를 Designer에 Drag &amp; Drop하여 워크플로우 생성<br><img src="/img/pipeline/workflow/workspace/data-sampling/updown_example.png" alt="example"></li><li>[upDown]노드의 method 값을 up 선택하고 labelFalse,labelTrue 값을 입력
 <img src="/img/pipeline/workflow/workspace/data-sampling/updown_prop_result.png" alt="propery"></li><li>[upDown] 확인하면 비슷한 건수로 샘플링을 한 결과를 볼수 있음
-<img src="/img/pipeline/workflow/workspace/data-sampling/updown_result.png" alt="updown_004"></li></ol></div></article><div class="margin-vert--lg"><nav class="pagination-nav" aria-label="Blog list page navigation"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/pipeline/workflow/workspace/data-sampling/cluster"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">« cluster</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/pipeline/workflow/workspace/data-processing-basic/filter"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">filter »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_3klQ"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#definition" class="table-of-contents__link">Definition</a></li><li><a href="#set" class="table-of-contents__link">Set</a></li><li><a href="#example" class="table-of-contents__link">Example</a></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="text--center"><div>Copyright © 2020 BY SK HOLDINGS CO. LTD. ALL RIGHTS RESERVED</div></div></div></footer></div>
+<img src="/img/pipeline/workflow/workspace/data-sampling/updown_result.png" alt="updown_004"></li></ol></div></article><div class="margin-vert--lg"><nav class="pagination-nav" aria-label="Blog list page navigation"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/pipeline/workflow/workspace/data-sampling/cluster"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">« cluster</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/pipeline/workflow/workspace/data-processing-basic/filter"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">filter »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_3klQ"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#definition" class="table-of-contents__link">Definition</a></li><li><a href="#set" class="table-of-contents__link">Set</a></li><li><a href="#example" class="table-of-contents__link">Example</a></li></ul></div></div></div></div></main></div></div></div>
 <script src="/styles.03adc67d.js"></script>
-<script src="/runtime~main.f6f15a04.js"></script>
-<script src="/main.789a250c.js"></script>
+<script src="/runtime~main.8702308d.js"></script>
+<script src="/main.1859c4b6.js"></script>
 <script src="/1.7a06f662.js"></script>
-<script src="/2.4db8d49a.js"></script>
-<script src="/277.b2c0ecf2.js"></script>
+<script src="/2.de29693f.js"></script>
+<script src="/277.3d879599.js"></script>
 <script src="/278.990da4f2.js"></script>
-<script src="/20ac7829.a4da2f9f.js"></script>
+<script src="/20ac7829.7bf7ebd0.js"></script>
 <script src="/17896441.6fe1a8b1.js"></script>
-<script src="/e78309ba.6837cfa5.js"></script>
+<script src="/e78309ba.3109a215.js"></script>
 </body>
 </html>
